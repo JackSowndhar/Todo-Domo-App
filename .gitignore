@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-public/
+# manifest
 manifest.json
 
 # testing
