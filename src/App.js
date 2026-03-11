@@ -4,11 +4,10 @@ import Edit from "./components/Edit/Edit.jsx"
 import Cardpage from "./components/Card/Cardpage.jsx"
 import Add from "./components/Add/Add.jsx"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import "./App.css"
 
 const App = () => {
   return (
-    <div >
+    <div className="m-0 min-h-screen font-[Poppins] bg-gradient-to-br from-[#1d5345] to-[#164236]" >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Method />} />
