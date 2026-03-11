@@ -1,9 +1,85 @@
 {
-    "name": "React DomoApp",
-    "version": "0.0.1",
-    "size": {
-        "width": 3,
-        "height": 3
-    },
-    "mapping": []
+   "name": "React TODO App-DB",
+   "version": "3.0.1",
+   "size": {
+      "width": 3,
+      "height": 3
+   },
+   "collectionsMapping": [
+      {
+         "id": "2f7dc396-1f46-4a2f-a99c-50a3bec07b13",
+         "name": "project",
+         "syncEnabled": false
+      }
+   ],
+   "workflowsMapping": [
+      {
+         "startName": "Start project",
+         "alias": "email",
+         "modelId": "47df8ce5-2114-45f9-b165-1d579d1afea8",
+         "parameters": [
+            {
+               "name": "body",
+               "displayName": "body",
+               "subString": null,
+               "type": "text",
+               "visible": true,
+               "value": null,
+               "required": true,
+               "isList": false,
+               "children": [],
+               "nullable": false,
+               "entitySubType": null,
+               "aliasedName": "body"
+            },
+            {
+               "name": "email",
+               "displayName": "email",
+               "subString": null,
+               "type": "text",
+               "visible": true,
+               "value": null,
+               "required": true,
+               "isList": false,
+               "children": [],
+               "nullable": false,
+               "entitySubType": null,
+               "aliasedName": "email"
+            },
+            {
+               "name": "person",
+               "displayName": "person",
+               "subString": null,
+               "type": "person",
+               "visible": true,
+               "value": null,
+               "required": false,
+               "isList": false,
+               "children": [],
+               "nullable": false,
+               "entitySubType": null,
+               "aliasedName": "person"
+            },
+            {
+               "name": "subject",
+               "displayName": "subject",
+               "subString": null,
+               "type": "text",
+               "visible": true,
+               "value": null,
+               "required": true,
+               "isList": false,
+               "children": [],
+               "nullable": false,
+               "entitySubType": null,
+               "aliasedName": "subject"
+            }
+         ],
+         "version": "1.0.0"
+      }
+   ],
+   "id": "5218cc3c-8b26-46a7-a48c-e93c682f9481",
+   "proxyId": "7321baa9-74b3-41c9-a7be-d86a8d7ad730",
+   "fileName": "manifest.json",
+   "datasetsMapping": []
 }

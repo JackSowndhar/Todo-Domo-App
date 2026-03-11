@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Method from "./components/Method/Method.jsx"
+import Edit from "./components/Edit/Edit.jsx"
+import Cardpage from "./components/Card/Cardpage.jsx"
+import Add from "./components/Add/Add.jsx"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import "./App.css"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Method />} />
+          <Route path="/cardpage/:id" element={<Cardpage />} />
+          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/add" element={<Add />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
